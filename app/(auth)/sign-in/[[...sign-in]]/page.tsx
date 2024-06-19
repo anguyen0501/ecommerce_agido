@@ -1,9 +1,11 @@
 import { SignIn } from "@clerk/nextjs";
+import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="h-screen flex justify-center items-center">
-      <SignIn path="/sign-in" />;
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <SignIn path="/sign-in" />
     </div>
+    
   );
 }
